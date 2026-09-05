@@ -1,5 +1,7 @@
 # idempotent-moe: Zero-Copy Sparse MoE Dynamic Token Router for LLMs
 
+[![arXiv](https://img.shields.io/badge/arXiv-submit%2F8040718-b31b1b.svg)](https://arxiv.org)
+[![ResearchGate](https://img.shields.io/badge/ResearchGate-Publication%20414015429-00CCBB.svg)](https://www.researchgate.net/publication/414015429_Zero-Copy_In-Place_Dynamic_Token_Routing_and_Capacity_Compaction_for_Sparse_Mixture-of-Experts_Accelerators)
 [![Paper](https://img.shields.io/badge/Research%20Paper-PDF-red.svg)](paper/idempotent_moe_paper.pdf)
 [![PyPI](https://img.shields.io/pypi/v/idempotent-moe.svg)](https://pypi.org/project/idempotent-moe/)
 [![Patent Pending](https://img.shields.io/badge/Patent-Pending%20(US%2064%2F148%2C668)-blue.svg)](https://uspto.gov)
