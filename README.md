@@ -1,5 +1,6 @@
 # idempotent-moe: Zero-Copy Sparse MoE Dynamic Token Router for LLMs
 
+[![Hugging Face RFC](https://img.shields.io/badge/Hugging%20Face%20RFC-%2348548-yellow.svg)](https://github.com/huggingface/transformers/issues/48548)
 [![arXiv](https://img.shields.io/badge/arXiv-submit%2F8040718-b31b1b.svg)](https://arxiv.org)
 [![ResearchGate](https://img.shields.io/badge/ResearchGate-Publication%20414015429-00CCBB.svg)](https://www.researchgate.net/publication/414015429_Zero-Copy_In-Place_Dynamic_Token_Routing_and_Capacity_Compaction_for_Sparse_Mixture-of-Experts_Accelerators)
 [![Paper](https://img.shields.io/badge/Research%20Paper-PDF-red.svg)](paper/idempotent_moe_paper.pdf)
@@ -8,6 +9,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
 [![Hardware](https://img.shields.io/badge/Tested%20on-NVIDIA%20Blackwell%20sm__120-purple.svg)]()
 [![Python](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)]()
+
 
 > **Eliminate 100% of auxiliary VRAM allocations during Sparse Mixture-of-Experts (MoE) token dispatching and capacity dropping in Mixtral, DeepSeek, Megatron-LM, and Hugging Face models.**
 
@@ -92,6 +94,8 @@ hook = HuggingFaceMoEInplaceHook(capacity=2048, block_d=128)
 # Apply in-place compaction during model forward pass
 compacted_expert_inputs = hook(expert_inputs, gating_weights)
 ```
+
+> 🚀 **Official Hugging Face Upstreaming Proposal:** Track the community RFC and integration discussion at [Hugging Face Transformers Issue #48548](https://github.com/huggingface/transformers/issues/48548).
 
 ---
 
